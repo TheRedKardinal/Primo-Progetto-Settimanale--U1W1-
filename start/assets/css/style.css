@@ -175,21 +175,6 @@ nav i {
     clear: both;
 }
 
-/*CANCELLARE A FINE SKILL LIST TABELLA*/
-.skill-list li:nth-child(odd) {
-    background-color: hsla(0, 38%, 50%, 0.057);
-}
-
-.skill-list li:nth-child(even) {
-    background-color: hsla(0, 32%, 86%, 0.372);
-}
-
-.skill-list li:first-child {
-    font-weight: bold;
-}
-
-/*CANCELLARE FINO A QUESTO LI*/
-
 .project:nth-last-of-type(odd) {
     background-color: hsla(0, 38%, 50%, 0.057);
     border-left: 4px solid hsla(0, 96%, 19%, 0.784);
@@ -237,7 +222,7 @@ a {
 
 #progetti a:hover {
     color: hsl(0, 98%, 32%);
-border-bottom: 2px solid rgb(238, 168, 5);
+    border-bottom: 2px solid rgb(238, 168, 5);
 }
 
 #progetti a:focus {
@@ -288,8 +273,9 @@ textarea,
 select {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
-    width: 60%;
+    width: 100%;
     background-color: beige;
+    border-radius: 4px;
 }
 
 
