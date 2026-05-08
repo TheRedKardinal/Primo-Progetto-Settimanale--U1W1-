@@ -192,29 +192,60 @@ nav i {
 
 .project:nth-last-of-type(odd) {
     background-color: hsla(0, 38%, 50%, 0.057);
+    border-left: 4px solid hsla(0, 96%, 19%, 0.784);
 }
 
 .project:nth-last-of-type(even) {
     background-color: hsla(0, 32%, 86%, 0.372);
+    border-left: 4px solid rgb(238, 168, 5);
 }
 
 .project {
-    box-shadow: 0 2px 6px rgba(0, 0, 0.08);
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .project:hover {
     box-shadow: 0 2px 6px rgb(164, 3, 3);
 }
 
-.project h3,
-p,
-a {
-    margin-left: 5px;
-    margin-right: 5px;
+.project:nth-last-of-type(even):hover {
+    box-shadow: 0 2px 6px rgb(238, 168, 5)
 }
 
-.project:first-of-type h3::after {
+.project p,
+a {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin: 20px 10px 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#progetti a {
+    text-decoration: none;
+    padding-bottom: 0;
+}
+
+#progetti a::before {
+    font-family: "bootstrap-icons";
+    content: "\F3ED  ";
+}
+
+#progetti a:hover {
+    color: hsl(0, 98%, 32%);
+border-bottom: 2px solid rgb(238, 168, 5);
+}
+
+#progetti a:focus {
+    color: none;
+    pointer-events: none;
+}
+
+.project .project:first-of-type h3::after {
     content: "NEW";
     display: inline-block;
     padding: 6px 8px;
@@ -223,6 +254,22 @@ a {
     color: #ffffff;
     border-radius: 3px;
     font-size: 1rem;
+}
+
+.go-project {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5px;
+    width: max-content;
+    border-bottom: 1px solid rgb(238, 168, 5);
+    font-size: 0.8rem;
+}
+
+.go-project a,
+.project a {
+    text-decoration: none;
+    font-family: "Roboto";
+    color: hsla(0, 96%, 19%, 0.784);
 }
 
 input::placeholder,
