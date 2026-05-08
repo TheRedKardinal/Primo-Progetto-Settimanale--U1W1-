@@ -272,6 +272,9 @@ button:hover {
 }
 
 /*Skill List*/
+.skill-list table {
+    width: 100%;
+}
 
 .skill-list thead h5 {
     padding: 7px;
@@ -359,12 +362,35 @@ button:hover {
 
 #esperienze table {
     border-collapse: collapse;
+    width: 100%;
 }
 
-#esperienze caption,
+#esperienze thead {
+    background-color: hsla(0, 38%, 50%, 0.24);
+}
+
+#esperienze thead,
+#esperienze td,
+#esperienze tr {
+    border-collapse: collapse;
+    border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
+    border-left: 0;
+    border-right: 0;
+    padding: 5px;
+}
+
+#esperienze caption {
+    text-align: left;
+    margin: 0;
+    font-size: 0.8rem;
+    color: hsla(0, 96%, 19%, 0.784);
+}
+
 #esperienze th,
 #esperienze td {
-    border: 2px solid black;
+    color: hsla(0, 96%, 19%, 0.784);
+    margin: 0;
+    font-family: "Roboto";
 }
 
 #site-footer {
