@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/*Reset minimale*/
+
 *,
 *::before,
 *::after {
@@ -6,18 +10,26 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Playfair Display", sans-serif;
     font-size: 16px;
     line-height: 1.7;
     color: #333;
     background-color: #f4f4f4;
 }
 
+/*Max width 920px per responsive ottimale e ordinato in 992px*/
+
 main {
-    max-width: 920px;
+    max-width: 75%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0px 20px 40px;
+    margin-top: -30px;
 }
+
+/*Padding: TOP RIGHT BOOM LEFT*/
+/*Pattern classici: 
+border-bottom sotto un titolo (sottolineatura)
+border-left: spesso per le citazioni*/
 
 main section {
     padding: 32px;
@@ -26,6 +38,10 @@ main section {
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0.08);
 }
+
+/*box-shadow (box-text, uguale ma senza valore spread)
+offset-x | offset-y | blur | spread | colore
+sposta orizz/vert, sfoca, allarga, colora. inset porta l'ombra*/
 
 main section h2::before {
     content: "— ";
@@ -39,7 +55,7 @@ main section h2::before {
     background-position: center;
     color: #ad1304;
     text-align: center;
-    padding: 60px 20px 40px;
+    padding: 60px 20px 0;
     border-bottom: 4px solid rgb(238, 168, 5);
 }
 
@@ -65,13 +81,20 @@ h3 {
     text-align: start;
 }
 
+/*NAV*/
+
 #site-header nav a {
     color: rgb(238, 199, 4);
     font-weight: bold;
     line-height: 3;
-    padding: 8px 16px;
+    padding: 10px 16px 9px;
     margin: 0 4px;
     border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    text-decoration: none;
+    border: 1px solid rgb(238, 199, 4);
+    border-bottom: 0;
 }
 
 #site-header nav ul {
@@ -83,10 +106,21 @@ h3 {
     display: inline-block;
 }
 
-nav a:hover {
-    color: white;
-    background-color: rgb(173, 3, 3);
+nav i {
+    display: inline-block;
+    padding: 5px;
 }
+
+#site-header ul li:hover, #site-header nav a:hover {
+    color: hsla(0, 96%, 19%, 0.784);
+}
+
+#site-header nav a:hover {
+    background-color: rgb(238, 168, 5);
+    border: 0;
+}
+
+/*FINE NAV*/
 
 #chi-sono {
     background-color: #ffffff;
@@ -104,8 +138,11 @@ nav a:hover {
 
 #chi-sono p:first-of-type {
     font-size: 1.1rem;
-    font-style: italic;
     color: darkslategray;
+}
+
+#chi-sono p:last-child {
+    font-style: italic;
 }
 
 #chi-sono p:first-of-type::first-letter {
@@ -149,7 +186,9 @@ nav a:hover {
     box-shadow: 0 2px 6px rgb(164, 3, 3);
 }
 
-.project h3, p, a {
+.project h3,
+p,
+a {
     margin-left: 5px;
     margin-right: 5px;
 }
