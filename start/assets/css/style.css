@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 /*Reset minimale*/
 
 *,
@@ -14,10 +15,17 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: rgb(243, 243, 238);
 }
 
-/*Max width 920px per responsive ottimale e ordinato in 992px*/
+body section {
+    background-color: #ffffff;
+    text-align: justify;
+}
+
+body p {
+    font-family: "Marriweather";
+}
 
 main {
     max-width: 75%;
@@ -44,7 +52,8 @@ offset-x | offset-y | blur | spread | colore
 sposta orizz/vert, sfoca, allarga, colora. inset porta l'ombra*/
 
 main section h2::before {
-    content: "— ";
+    font-family: "bootstrap-icons";
+    content: "\F6A9  ";
     color: rgb(238, 168, 5);
 }
 
@@ -63,25 +72,34 @@ main section h2::before {
     font-size: 2.5rem;
     font-weight: bold;
     font-style: italic;
-    text-shadow: 0 2px 4px rgba(0, 0, 0.2);
 }
-
 
 .tagline {
     color: rgb(238, 135, 18);
-    font-style: italic;
-    text-shadow: 0 2px 4px rgba(0, 0, 0.2);
+    font-family: "Roboto";
+    font-weight: bold;
 }
 
 
-main h2,
-h3 {
+main h2 {
     font-size: 1.8rem;
     color: hsla(0, 96%, 19%, 0.784);
     text-align: start;
 }
 
+main h3 {
+    font-size: 1.5rem;
+    color: hsla(0, 96%, 19%, 0.784);
+    text-align: start;
+}
+
 /*NAV*/
+
+#site-header h1,
+#site-header nav a,
+.tagline {
+    text-shadow: 0 2px 4px rgba(0, 0, 0.2);
+}
 
 #site-header nav a {
     color: rgb(238, 199, 4);
@@ -111,19 +129,20 @@ nav i {
     padding: 5px;
 }
 
-#site-header ul li:hover, #site-header nav a:hover {
+#site-header ul li:hover,
+#site-header nav a:hover {
     color: hsla(0, 96%, 19%, 0.784);
 }
 
 #site-header nav a:hover {
     background-color: rgb(238, 168, 5);
     border: 0;
+    text-shadow: none;
 }
 
 /*FINE NAV*/
 
 #chi-sono {
-    background-color: #ffffff;
     text-align: justify;
 }
 
@@ -157,6 +176,7 @@ nav i {
     clear: both;
 }
 
+/*CANCELLARE A FINE SKILL LIST TABELLA*/
 .skill-list li:nth-child(odd) {
     background-color: hsla(0, 38%, 50%, 0.057);
 }
@@ -168,6 +188,8 @@ nav i {
 .skill-list li:first-child {
     font-weight: bold;
 }
+
+/*CANCELLARE FINO A QUESTO LI*/
 
 .project:nth-last-of-type(odd) {
     background-color: hsla(0, 38%, 50%, 0.057);
@@ -250,13 +272,62 @@ button:hover {
     width: auto;
 }
 
-table {
+.skill-list thead h5 {
+    padding: 7px;
+   border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
+}
+
+.skill-list thead {
+    background-color: hsla(0, 38%, 50%, 0.24);
+}
+
+.skill-list thead,
+.skill-list td,
+.skill-list tr {
+    border-collapse: collapse;
+    border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
+    border-left: 0;
+    border-right: 0;
+    padding: 5px;
+}
+
+.skill-list caption {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.skill-list th,
+.skill-list caption {
+    text-align: left;
+}
+
+.skill-list p,
+.skill-list h5 {
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.skill-list p {
+    font-size: 0.8rem;
+    color: gray;
+}
+
+.level {
+    width: 65vh;
+    height: 0.8rem;
+    background-color: #ad1304;
+    border-radius: 20px;
+}
+
+
+
+#esperienze table {
     border-collapse: collapse;
 }
 
-caption,
-th,
-td {
+#esperienze caption,
+#esperienze th,
+#esperienze td {
     border: 2px solid black;
 }
 
@@ -265,13 +336,4 @@ td {
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
-}
-
-#contacts {
-    padding-top: 3%;
-    text-align: center;
-}
-
-#contacts a {
-    margin: 10px;
 }
