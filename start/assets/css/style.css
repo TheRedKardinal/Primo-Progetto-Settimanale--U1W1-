@@ -305,14 +305,15 @@ button:hover {
 }
 
 /*Skill List*/
-.skill-list table {
+#competenze table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .skill-list thead h5 {
-    padding: 7px;
-    border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
+    padding: 9px;
 }
+
 
 .skill-list thead {
     background-color: hsla(0, 38%, 50%, 0.24);
@@ -321,11 +322,11 @@ button:hover {
 .skill-list thead,
 .skill-list td,
 .skill-list tr {
-    border-collapse: collapse;
     border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
     border-left: 0;
     border-right: 0;
     padding: 5px;
+    border-collapse: collapse;
 }
 
 .skill-list caption {
