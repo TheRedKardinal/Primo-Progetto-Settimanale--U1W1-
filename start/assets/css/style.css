@@ -20,7 +20,6 @@ body {
 
 body section {
     background-color: #ffffff;
-    text-align: justify;
 }
 
 body p {
@@ -272,9 +271,11 @@ button:hover {
     width: auto;
 }
 
+/*Skill List*/
+
 .skill-list thead h5 {
     padding: 7px;
-   border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
+    border-bottom: 1px solid hsla(0, 38%, 50%, 0.201);
 }
 
 .skill-list thead {
@@ -303,6 +304,7 @@ button:hover {
 
 .skill-list p,
 .skill-list h5 {
+    color: hsla(0, 96%, 19%, 0.784);
     margin: 0;
     font-family: "Roboto";
 }
@@ -313,13 +315,47 @@ button:hover {
 }
 
 .level {
-    width: 65vh;
+    width: 60.5vh;
     height: 0.8rem;
-    background-color: #ad1304;
+    background-color: hsla(0, 38%, 50%, 0.24);
+    border-radius: 20px;
+    margin: 4px 5px 30px;
+}
+
+#barra1 {
+    width: 90%;
+    height: 0.8rem;
+    background-color: rgb(238, 168, 5);
     border-radius: 20px;
 }
 
+#barra2 {
+    width: 85%;
+    height: 0.8rem;
+    background-color: rgb(238, 168, 5);
+    border-radius: 20px;
+}
 
+#barra3 {
+    width: 95%;
+    height: 0.8rem;
+    background-color: rgb(238, 168, 5);
+    border-radius: 20px;
+}
+
+#barra4 {
+    width: 70%;
+    height: 0.8rem;
+    background-color: rgb(238, 168, 5);
+    border-radius: 20px;
+}
+
+#barra5 {
+    width: 40%;
+    height: 0.8rem;
+    background-color: rgb(238, 168, 5);
+    border-radius: 20px;
+}
 
 #esperienze table {
     border-collapse: collapse;
