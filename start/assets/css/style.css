@@ -351,7 +351,7 @@ button:hover {
 }
 
 .level {
-    width: 60.5vh;
+    width: 100vh;
     height: 0.8rem;
     background-color: hsla(0, 38%, 50%, 0.24);
     border-radius: 20px;
