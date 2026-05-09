@@ -141,6 +141,14 @@ nav i {
 
 /*FINE NAV*/
 
+main section h2 {
+    margin-bottom: 0;
+}
+
+#chi-sono p {
+    margin-top: 0;
+}
+
 #chi-sono {
     text-align: justify;
 }
@@ -164,11 +172,12 @@ nav i {
 }
 
 #chi-sono p:first-of-type::first-letter {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     float: left;
     margin-right: 6px;
     color: hsla(0, 96%, 19%, 0.784);
+    ;
 }
 
 #competenze {
@@ -358,6 +367,19 @@ button:hover {
     border-radius: 20px;
     margin: 4px 5px 30px;
 }
+
+.skill-list caption,
+.skill-list thead,
+.skill-list tbody,
+.skill-list tbody td,
+.skill-list thead tr h5 {
+    max-width: 838px;
+}
+
+.level {
+    max-width: 99%;
+}
+
 
 #barra1 {
     width: 90%;
